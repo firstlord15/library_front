@@ -3,9 +3,9 @@ import { create } from "zustand";
 const useAuthStore = create((set) => ({
     
     // Состояние
-    token: localStorage.getItem('token') || null;
-    user: JSON.parse(localStorage.getItem('user')) || null;
-    isAuthenticated: !!localStorage.getItem('token');
+    token: localStorage.getItem('token') || null,
+    user: JSON.parse(localStorage.getItem('user')) || null,
+    isAuthenticated: !!localStorage.getItem('token'),
 
     // Действия
     login: (token, user) => {
